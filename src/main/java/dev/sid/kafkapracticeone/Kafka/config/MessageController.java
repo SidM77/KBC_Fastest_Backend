@@ -1,4 +1,4 @@
-package dev.sid.kafkapracticeone;
+package dev.sid.kafkapracticeone.Kafka.config;
 
 
 import org.springframework.kafka.core.KafkaTemplate;
@@ -21,6 +21,6 @@ public class MessageController {
 
     @PostMapping("api/v1/messages")
     public void publish (@RequestBody MessageRequest messageRequest) {
-        kafkaTemplate.send("sidNewTopic", messageRequest.message());
+        kafkaTemplate.send("sidSecondTopic", messageRequest.message());
     }
 }

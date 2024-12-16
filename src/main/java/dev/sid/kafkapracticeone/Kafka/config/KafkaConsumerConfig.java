@@ -1,4 +1,4 @@
-package dev.sid.kafkapracticeone.config;
+package dev.sid.kafkapracticeone.Kafka.config;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.producer.ProducerConfig;

@@ -1,4 +1,4 @@
-package dev.sid.kafkapracticeone.config;
+package dev.sid.kafkapracticeone.Kafka.config;
 
 import org.apache.kafka.clients.admin.NewTopic;
 import org.springframework.context.annotation.Bean;
@@ -10,6 +10,6 @@ public class KafkaTopicConfig {
 
     @Bean
     public NewTopic sidTopic() {
-        return TopicBuilder.name("sidNewTopic").build();
+        return TopicBuilder.name("sidSecondTopic").build();
     }
 }
